@@ -25,8 +25,8 @@ suites:
     driver:
         vm_hostname: chefd.local.com
     run_list:
-      - recipe[oracle::deps_install]
-      #- recipe[oracle::default
+      # - recipe[oracle::deps_install]
+      - recipe[oracle::default]
     verifier:
        inspec_tests:
           - test/smoke/default
